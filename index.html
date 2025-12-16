@@ -1,0 +1,954 @@
+<!doctype html>
+<html lang="en" class="page">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/webspark-test-task/assets/logo-monblan-7bb4XFkt.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Monblan Project</title>
+    <script type="module" crossorigin src="/webspark-test-task/assets/index-B7gd7kdP.js"></script>
+    <link rel="stylesheet" crossorigin href="/webspark-test-task/assets/index-B_C0x1sM.css">
+  </head>
+  <body class="page__body">
+    <header class="header">
+      <div class="header__background"></div>
+
+      <div class="header__content">
+        <div class="header__content-wrapper">
+          <a href="#" class="header__logo"
+            ><img
+              src="data:image/svg+xml,%3csvg%20width='138'%20height='138'%20viewBox='0%200%20138%20138'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M56.5%207.21688C64.235%202.75106%2073.765%202.75106%2081.5%207.21688L116.256%2027.2831C123.991%2031.7489%20128.756%2040.0021%20128.756%2048.9338V89.0662C128.756%2097.9979%20123.991%20106.251%20116.256%20110.717L81.5%20130.783C73.765%20135.249%2064.235%20135.249%2056.5%20130.783L21.7442%20110.717C14.0092%20106.251%209.24425%2097.9979%209.24425%2089.0662V48.9338C9.24425%2040.0021%2014.0092%2031.7489%2021.7442%2027.2831L56.5%207.21688Z'%20fill='white'/%3e%3cpath%20d='M128.756%2088.5317V89.0662C128.756%2097.9979%20123.991%20106.251%20116.256%20110.717L81.5%20130.783C73.765%20135.249%2064.235%20135.249%2056.5%20130.783L21.7442%20110.717C21.1716%20110.386%2020.6152%20110.035%2020.0758%20109.664L17.5%20101L26%2068L33.5%2056L55.5%2078.5L82.5%2038.5L128.756%2088.5317Z'%20fill='%23066C61'/%3e%3cpath%20d='M18.1726%20108.216C14.6282%20105.242%2011.9954%20101.354%2010.5392%2097.0092L10.5%2096.5C11.6667%2083.5%2016.7%2056.8%2027.5%2054C41.5%2050.3704%2048.5%2096.5%2048.5%2096.5C48.5%2096.5%2054.7204%2032.2561%2074%2033.5C89.5%2034.5%2095.5%2066.5%2091.5%20125L91.4793%20125.022L81.5%20130.783C78.1083%20132.741%2074.3715%20133.841%2070.5923%20134.082C77.5658%20121.943%2076.9064%2074.0186%2073.5%2056.5C71.5082%2062.0157%2069.939%2070.5009%2068.2456%2079.6574C64.4128%20100.382%2059.9439%20124.546%2048.5%20125.5C48.0761%20125.535%2047.6559%20125.513%2047.2396%20125.437L43.4536%20123.251C36.248%20116.272%2030.6804%2094.8558%2028.5%2083C28.103%2093.7194%2024.061%20105.982%2022.0451%20110.891L21.7442%20110.717C21.4834%20110.566%2021.2259%20110.411%2020.9718%20110.252L18.1726%20108.216Z'%20fill='%23B3DBC9'/%3e%3c/svg%3e"
+              alt="Monblan Project Logo"
+              class="header__logo-img"
+          /></a>
+          <div class="header__info">
+            <div class="header__title-block">
+              <h1 class="header__title">monblanproject</h1>
+              <div class="header__start">Start on 17-02-2016</div>
+            </div>
+            <div class="header__rating-block">
+              <p class="header__rating header__rating--mr-28">
+                870 <span class="header__rating-span">posts</span>
+              </p>
+              <p class="header__rating header__rating--mr-17">
+                11,787 <span class="header__rating-span">followers</span>
+              </p>
+              <p class="header__rating">112 <span class="header__rating-span">following</span></p>
+            </div>
+            <div class="header__date-block">
+              <p class="header__date-descripton">Date</p>
+              <div class="header__date-inputs">
+                <div class="header__date-field">
+                  <input type="text" id="dateFrom" class="header__date-input" placeholder="from" />
+                  <button
+                    type="button"
+                    class="header__date-button header__date-button--calendar"
+                    data-target="from"
+                  ></button>
+                  <button
+                    type="button"
+                    class="header__date-button header__date-button--clear"
+                    data-target="from"
+                  ></button>
+                </div>
+                <div class="header__date-field">
+                  <input type="text" id="dateTo" class="header__date-input" placeholder="to" />
+                  <button
+                    type="button"
+                    class="header__date-button header__date-button--calendar"
+                    data-target="to"
+                  ></button>
+                  <button
+                    type="button"
+                    class="header__date-button header__date-button--clear"
+                    data-target="to"
+                  ></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="main__content">
+        <nav class="main__navigation">
+          <button class="main__button main__button--grid">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </button>
+          <button class="main__button main__button--row main__button--active"></button>
+        </nav>
+
+        <section class="main__row-section active-section">
+          <div class="card card--row">
+            <div class="card__row-image card__row-image--1"></div>
+
+            <div class="card__content">
+              <div class="card__description card__description--mr-160">
+                <div class="card__description-title">Today</div>
+
+                <div class="card__description-items">
+                  <div class="card__description-item">
+                    <div class="card__description-icon card__description-icon--heart"></div>
+                    <div class="card__description-number">128</div>
+                  </div>
+
+                  <div class="card__description-item">
+                    <div class="card__description-icon card__description-icon--message"></div>
+                    <div class="card__description-number">31</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card__description card__description--mr-168">
+                <div class="card__description-title">9-08-2016</div>
+
+                <div class="card__description-items card__description-items--gap-28">
+                  <div class="card__description-item">
+                    <div class="card__description-icon card__description-icon--heart"></div>
+                    <div class="card__description-number">67</div>
+                  </div>
+
+                  <div class="card__description-item">
+                    <div class="card__description-icon card__description-icon--message"></div>
+                    <div class="card__description-number">22</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card__description">
+                <div class="card__description-title">Image upload</div>
+
+                <div class="card__description-items">
+                  <div class="card__description-item">
+                    <div class="card__description-number">11-04-2016</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card--row">
+            <div class="card__row-image card__row-image--2"></div>
+
+            <div class="card__content">
+              <div class="card__description card__description--mr-160">
+                <div class="card__description-title">Today</div>
+
+                <div class="card__description-items">
+                  <div class="card__description-item">
+                    <div class="card__description-icon card__description-icon--heart"></div>
+                    <div class="card__description-number">128</div>
+                  </div>
+
+                  <div class="card__description-item">
+                    <div class="card__description-icon card__description-icon--message"></div>
+                    <div class="card__description-number">31</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card__description card__description--mr-168">
+                <div class="card__description-title">9-08-2016</div>
+
+                <div class="card__description-items card__description-items--gap-28">
+                  <div class="card__description-item">
+                    <div class="card__description-icon card__description-icon--heart"></div>
+                    <div class="card__description-number">67</div>
+                  </div>
+
+                  <div class="card__description-item">
+                    <div class="card__description-icon card__description-icon--message"></div>
+                    <div class="card__description-number">22</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card__description">
+                <div class="card__description-title">Image upload</div>
+
+                <div class="card__description-items">
+                  <div class="card__description-item">
+                    <div class="card__description-number">11-04-2016</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card--row">
+            <div class="card__row-image card__row-image--3"></div>
+
+            <div class="card__content">
+              <div class="card__description card__description--mr-160">
+                <div class="card__description-title">Today</div>
+
+                <div class="card__description-items">
+                  <div class="card__description-item">
+                    <div class="card__description-icon card__description-icon--heart"></div>
+                    <div class="card__description-number">128</div>
+                  </div>
+
+                  <div class="card__description-item">
+                    <div class="card__description-icon card__description-icon--message"></div>
+                    <div class="card__description-number">31</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card__description card__description--mr-168">
+                <div class="card__description-title">9-08-2016</div>
+
+                <div class="card__description-items card__description-items--gap-28">
+                  <div class="card__description-item">
+                    <div class="card__description-icon card__description-icon--heart"></div>
+                    <div class="card__description-number">67</div>
+                  </div>
+
+                  <div class="card__description-item">
+                    <div class="card__description-icon card__description-icon--message"></div>
+                    <div class="card__description-number">22</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card__description">
+                <div class="card__description-title">Image upload</div>
+
+                <div class="card__description-items">
+                  <div class="card__description-item">
+                    <div class="card__description-number">11-04-2016</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card--row">
+            <div class="card__row-image card__row-image--4"></div>
+
+            <div class="card__content">
+              <div class="card__description card__description--mr-160">
+                <div class="card__description-title">Today</div>
+
+                <div class="card__description-items">
+                  <div class="card__description-item">
+                    <div class="card__description-icon card__description-icon--heart"></div>
+                    <div class="card__description-number">128</div>
+                  </div>
+
+                  <div class="card__description-item">
+                    <div class="card__description-icon card__description-icon--message"></div>
+                    <div class="card__description-number">31</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card__description card__description--mr-168">
+                <div class="card__description-title">9-08-2016</div>
+
+                <div class="card__description-items card__description-items--gap-28">
+                  <div class="card__description-item">
+                    <div class="card__description-icon card__description-icon--heart"></div>
+                    <div class="card__description-number">67</div>
+                  </div>
+
+                  <div class="card__description-item">
+                    <div class="card__description-icon card__description-icon--message"></div>
+                    <div class="card__description-number">22</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card__description">
+                <div class="card__description-title">Image upload</div>
+
+                <div class="card__description-items">
+                  <div class="card__description-item">
+                    <div class="card__description-number">11-04-2016</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card--row">
+            <div class="card__row-image card__row-image--5"></div>
+
+            <div class="card__content">
+              <div class="card__description card__description--mr-160">
+                <div class="card__description-title">Today</div>
+
+                <div class="card__description-items">
+                  <div class="card__description-item">
+                    <div class="card__description-icon card__description-icon--heart"></div>
+                    <div class="card__description-number">128</div>
+                  </div>
+
+                  <div class="card__description-item">
+                    <div class="card__description-icon card__description-icon--message"></div>
+                    <div class="card__description-number">31</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card__description card__description--mr-168">
+                <div class="card__description-title">9-08-2016</div>
+
+                <div class="card__description-items card__description-items--gap-28">
+                  <div class="card__description-item">
+                    <div class="card__description-icon card__description-icon--heart"></div>
+                    <div class="card__description-number">67</div>
+                  </div>
+
+                  <div class="card__description-item">
+                    <div class="card__description-icon card__description-icon--message"></div>
+                    <div class="card__description-number">22</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card__description">
+                <div class="card__description-title">Image upload</div>
+
+                <div class="card__description-items">
+                  <div class="card__description-item">
+                    <div class="card__description-number">11-04-2016</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card--row">
+            <div class="card__row-image card__row-image--6"></div>
+
+            <div class="card__content">
+              <div class="card__description card__description--mr-160">
+                <div class="card__description-title">Today</div>
+
+                <div class="card__description-items">
+                  <div class="card__description-item">
+                    <div class="card__description-icon card__description-icon--heart"></div>
+                    <div class="card__description-number">128</div>
+                  </div>
+
+                  <div class="card__description-item">
+                    <div class="card__description-icon card__description-icon--message"></div>
+                    <div class="card__description-number">31</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card__description card__description--mr-168">
+                <div class="card__description-title">9-08-2016</div>
+
+                <div class="card__description-items card__description-items--gap-28">
+                  <div class="card__description-item">
+                    <div class="card__description-icon card__description-icon--heart"></div>
+                    <div class="card__description-number">67</div>
+                  </div>
+
+                  <div class="card__description-item">
+                    <div class="card__description-icon card__description-icon--message"></div>
+                    <div class="card__description-number">22</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card__description">
+                <div class="card__description-title">Image upload</div>
+
+                <div class="card__description-items">
+                  <div class="card__description-item">
+                    <div class="card__description-number">11-04-2016</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card--row">
+            <div class="card__row-image card__row-image--7"></div>
+
+            <div class="card__content">
+              <div class="card__description card__description--mr-160">
+                <div class="card__description-title">Today</div>
+
+                <div class="card__description-items">
+                  <div class="card__description-item">
+                    <div class="card__description-icon card__description-icon--heart"></div>
+                    <div class="card__description-number">128</div>
+                  </div>
+
+                  <div class="card__description-item">
+                    <div class="card__description-icon card__description-icon--message"></div>
+                    <div class="card__description-number">31</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card__description card__description--mr-168">
+                <div class="card__description-title">9-08-2016</div>
+
+                <div class="card__description-items card__description-items--gap-28">
+                  <div class="card__description-item">
+                    <div class="card__description-icon card__description-icon--heart"></div>
+                    <div class="card__description-number">67</div>
+                  </div>
+
+                  <div class="card__description-item">
+                    <div class="card__description-icon card__description-icon--message"></div>
+                    <div class="card__description-number">22</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card__description">
+                <div class="card__description-title">Image upload</div>
+
+                <div class="card__description-items">
+                  <div class="card__description-item">
+                    <div class="card__description-number">11-04-2016</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card--row">
+            <div class="card__row-image card__row-image--8"></div>
+
+            <div class="card__content">
+              <div class="card__description card__description--mr-160">
+                <div class="card__description-title">Today</div>
+
+                <div class="card__description-items">
+                  <div class="card__description-item">
+                    <div class="card__description-icon card__description-icon--heart"></div>
+                    <div class="card__description-number">128</div>
+                  </div>
+
+                  <div class="card__description-item">
+                    <div class="card__description-icon card__description-icon--message"></div>
+                    <div class="card__description-number">31</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card__description card__description--mr-168">
+                <div class="card__description-title">9-08-2016</div>
+
+                <div class="card__description-items card__description-items--gap-28">
+                  <div class="card__description-item">
+                    <div class="card__description-icon card__description-icon--heart"></div>
+                    <div class="card__description-number">67</div>
+                  </div>
+
+                  <div class="card__description-item">
+                    <div class="card__description-icon card__description-icon--message"></div>
+                    <div class="card__description-number">22</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card__description">
+                <div class="card__description-title">Image upload</div>
+
+                <div class="card__description-items">
+                  <div class="card__description-item">
+                    <div class="card__description-number">11-04-2016</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card--row">
+            <div class="card__row-image card__row-image--9"></div>
+
+            <div class="card__content">
+              <div class="card__description card__description--mr-160">
+                <div class="card__description-title">Today</div>
+
+                <div class="card__description-items">
+                  <div class="card__description-item">
+                    <div class="card__description-icon card__description-icon--heart"></div>
+                    <div class="card__description-number">128</div>
+                  </div>
+
+                  <div class="card__description-item">
+                    <div class="card__description-icon card__description-icon--message"></div>
+                    <div class="card__description-number">31</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card__description card__description--mr-168">
+                <div class="card__description-title">9-08-2016</div>
+
+                <div class="card__description-items card__description-items--gap-28">
+                  <div class="card__description-item">
+                    <div class="card__description-icon card__description-icon--heart"></div>
+                    <div class="card__description-number">67</div>
+                  </div>
+
+                  <div class="card__description-item">
+                    <div class="card__description-icon card__description-icon--message"></div>
+                    <div class="card__description-number">22</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card__description">
+                <div class="card__description-title">Image upload</div>
+
+                <div class="card__description-items">
+                  <div class="card__description-item">
+                    <div class="card__description-number">11-04-2016</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="main__grid-section">
+          <div class="card card--grid">
+            <div class="card__grid-image card__grid-image--1"></div>
+
+            <div class="card__content card__content--grid">
+              <div class="card__description">
+                <div class="card__description-title">Today</div>
+
+                <div class="card__description-items card__description-items--grid">
+                  <div class="card__description-item">
+                    <div class="card__description-icon card__description-icon--heart"></div>
+                    <div class="card__description-number">128</div>
+                  </div>
+
+                  <div class="card__description-item">
+                    <div class="card__description-icon card__description-icon--message"></div>
+                    <div class="card__description-number">31</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card__description">
+                <div class="card__description-title">9-08-2016</div>
+
+                <div class="card__description-items card__description-items--grid">
+                  <div class="card__description-item">
+                    <div class="card__description-icon card__description-icon--heart"></div>
+                    <div class="card__description-number">67</div>
+                  </div>
+
+                  <div class="card__description-item">
+                    <div class="card__description-icon card__description-icon--message"></div>
+                    <div class="card__description-number">22</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card__description card__description--bottom">
+                <div class="card__description-title card__description-title--grid">
+                  Image upload
+                </div>
+
+                <div class="card__description-items">
+                  <div class="card__description-item">
+                    <div class="card__description-number card__description-number--bottom">
+                      11-04-2016
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card--grid">
+            <div class="card__grid-image card__grid-image--2"></div>
+
+            <div class="card__content card__content--grid">
+              <div class="card__description">
+                <div class="card__description-title">Today</div>
+
+                <div class="card__description-items card__description-items--grid">
+                  <div class="card__description-item">
+                    <div class="card__description-icon card__description-icon--heart"></div>
+                    <div class="card__description-number">128</div>
+                  </div>
+
+                  <div class="card__description-item">
+                    <div class="card__description-icon card__description-icon--message"></div>
+                    <div class="card__description-number">31</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card__description">
+                <div class="card__description-title">9-08-2016</div>
+
+                <div class="card__description-items card__description-items--grid">
+                  <div class="card__description-item">
+                    <div class="card__description-icon card__description-icon--heart"></div>
+                    <div class="card__description-number">67</div>
+                  </div>
+
+                  <div class="card__description-item">
+                    <div class="card__description-icon card__description-icon--message"></div>
+                    <div class="card__description-number">22</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card__description card__description--bottom">
+                <div class="card__description-title card__description-title--grid">
+                  Image upload
+                </div>
+
+                <div class="card__description-items">
+                  <div class="card__description-item">
+                    <div class="card__description-number card__description-number--bottom">
+                      11-04-2016
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card--grid">
+            <div class="card__grid-image card__grid-image--3"></div>
+
+            <div class="card__content card__content--grid">
+              <div class="card__description">
+                <div class="card__description-title">Today</div>
+
+                <div class="card__description-items card__description-items--grid">
+                  <div class="card__description-item">
+                    <div class="card__description-icon card__description-icon--heart"></div>
+                    <div class="card__description-number">128</div>
+                  </div>
+
+                  <div class="card__description-item">
+                    <div class="card__description-icon card__description-icon--message"></div>
+                    <div class="card__description-number">31</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card__description">
+                <div class="card__description-title">9-08-2016</div>
+
+                <div class="card__description-items card__description-items--grid">
+                  <div class="card__description-item">
+                    <div class="card__description-icon card__description-icon--heart"></div>
+                    <div class="card__description-number">67</div>
+                  </div>
+
+                  <div class="card__description-item">
+                    <div class="card__description-icon card__description-icon--message"></div>
+                    <div class="card__description-number">22</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card__description card__description--bottom">
+                <div class="card__description-title card__description-title--grid">
+                  Image upload
+                </div>
+
+                <div class="card__description-items">
+                  <div class="card__description-item">
+                    <div class="card__description-number card__description-number--bottom">
+                      11-04-2016
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card--grid">
+            <div class="card__grid-image card__grid-image--4"></div>
+
+            <div class="card__content card__content--grid">
+              <div class="card__description">
+                <div class="card__description-title">Today</div>
+
+                <div class="card__description-items card__description-items--grid">
+                  <div class="card__description-item">
+                    <div class="card__description-icon card__description-icon--heart"></div>
+                    <div class="card__description-number">128</div>
+                  </div>
+
+                  <div class="card__description-item">
+                    <div class="card__description-icon card__description-icon--message"></div>
+                    <div class="card__description-number">31</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card__description">
+                <div class="card__description-title">9-08-2016</div>
+
+                <div class="card__description-items card__description-items--grid">
+                  <div class="card__description-item">
+                    <div class="card__description-icon card__description-icon--heart"></div>
+                    <div class="card__description-number">67</div>
+                  </div>
+
+                  <div class="card__description-item">
+                    <div class="card__description-icon card__description-icon--message"></div>
+                    <div class="card__description-number">22</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card__description card__description--bottom">
+                <div class="card__description-title card__description-title--grid">
+                  Image upload
+                </div>
+
+                <div class="card__description-items">
+                  <div class="card__description-item">
+                    <div class="card__description-number card__description-number--bottom">
+                      11-04-2016
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card--grid">
+            <div class="card__grid-image card__grid-image--5"></div>
+
+            <div class="card__content card__content--grid">
+              <div class="card__description">
+                <div class="card__description-title">Today</div>
+
+                <div class="card__description-items card__description-items--grid">
+                  <div class="card__description-item">
+                    <div class="card__description-icon card__description-icon--heart"></div>
+                    <div class="card__description-number">128</div>
+                  </div>
+
+                  <div class="card__description-item">
+                    <div class="card__description-icon card__description-icon--message"></div>
+                    <div class="card__description-number">31</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card__description">
+                <div class="card__description-title">9-08-2016</div>
+
+                <div class="card__description-items card__description-items--grid">
+                  <div class="card__description-item">
+                    <div class="card__description-icon card__description-icon--heart"></div>
+                    <div class="card__description-number">67</div>
+                  </div>
+
+                  <div class="card__description-item">
+                    <div class="card__description-icon card__description-icon--message"></div>
+                    <div class="card__description-number">22</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card__description card__description--bottom">
+                <div class="card__description-title card__description-title--grid">
+                  Image upload
+                </div>
+
+                <div class="card__description-items">
+                  <div class="card__description-item">
+                    <div class="card__description-number card__description-number--bottom">
+                      11-04-2016
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card--grid">
+            <div class="card__grid-image card__grid-image--6"></div>
+
+            <div class="card__content card__content--grid">
+              <div class="card__description">
+                <div class="card__description-title">Today</div>
+
+                <div class="card__description-items card__description-items--grid">
+                  <div class="card__description-item">
+                    <div class="card__description-icon card__description-icon--heart"></div>
+                    <div class="card__description-number">128</div>
+                  </div>
+
+                  <div class="card__description-item">
+                    <div class="card__description-icon card__description-icon--message"></div>
+                    <div class="card__description-number">31</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card__description">
+                <div class="card__description-title">9-08-2016</div>
+
+                <div class="card__description-items card__description-items--grid">
+                  <div class="card__description-item">
+                    <div class="card__description-icon card__description-icon--heart"></div>
+                    <div class="card__description-number">67</div>
+                  </div>
+
+                  <div class="card__description-item">
+                    <div class="card__description-icon card__description-icon--message"></div>
+                    <div class="card__description-number">22</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card__description card__description--bottom">
+                <div class="card__description-title card__description-title--grid">
+                  Image upload
+                </div>
+
+                <div class="card__description-items">
+                  <div class="card__description-item">
+                    <div class="card__description-number card__description-number--bottom">
+                      11-04-2016
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card--grid">
+            <div class="card__grid-image card__grid-image--7"></div>
+
+            <div class="card__content card__content--grid">
+              <div class="card__description">
+                <div class="card__description-title">Today</div>
+
+                <div class="card__description-items card__description-items--grid">
+                  <div class="card__description-item">
+                    <div class="card__description-icon card__description-icon--heart"></div>
+                    <div class="card__description-number">128</div>
+                  </div>
+
+                  <div class="card__description-item">
+                    <div class="card__description-icon card__description-icon--message"></div>
+                    <div class="card__description-number">31</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card__description">
+                <div class="card__description-title">9-08-2016</div>
+
+                <div class="card__description-items card__description-items--grid">
+                  <div class="card__description-item">
+                    <div class="card__description-icon card__description-icon--heart"></div>
+                    <div class="card__description-number">67</div>
+                  </div>
+
+                  <div class="card__description-item">
+                    <div class="card__description-icon card__description-icon--message"></div>
+                    <div class="card__description-number">22</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card__description card__description--bottom">
+                <div class="card__description-title card__description-title--grid">
+                  Image upload
+                </div>
+
+                <div class="card__description-items">
+                  <div class="card__description-item">
+                    <div class="card__description-number card__description-number--bottom">
+                      11-04-2016
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card--grid">
+            <div class="card__grid-image card__grid-image--8"></div>
+
+            <div class="card__content card__content--grid">
+              <div class="card__description">
+                <div class="card__description-title">Today</div>
+
+                <div class="card__description-items card__description-items--grid">
+                  <div class="card__description-item">
+                    <div class="card__description-icon card__description-icon--heart"></div>
+                    <div class="card__description-number">128</div>
+                  </div>
+
+                  <div class="card__description-item">
+                    <div class="card__description-icon card__description-icon--message"></div>
+                    <div class="card__description-number">31</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card__description">
+                <div class="card__description-title">9-08-2016</div>
+
+                <div class="card__description-items card__description-items--grid">
+                  <div class="card__description-item">
+                    <div class="card__description-icon card__description-icon--heart"></div>
+                    <div class="card__description-number">67</div>
+                  </div>
+
+                  <div class="card__description-item">
+                    <div class="card__description-icon card__description-icon--message"></div>
+                    <div class="card__description-number">22</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card__description card__description--bottom">
+                <div class="card__description-title card__description-title--grid">
+                  Image upload
+                </div>
+
+                <div class="card__description-items">
+                  <div class="card__description-item">
+                    <div class="card__description-number card__description-number--bottom">
+                      11-04-2016
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <button class="main__load-button main__load-button--grid">LOAD MORE</button>
+      </div>
+
+      <div class="main__background"></div>
+    </main>
+  </body>
+</html>
