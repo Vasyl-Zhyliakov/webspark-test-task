@@ -1,0 +1,56 @@
+.flatpickr-calendar {
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+.flatpickr-input::-webkit-calendar-picker-indicator {
+  display: none !important;
+  -webkit-appearance: none;
+}
+
+.flatpickr-monthDropdown-months {
+  font-weight: 700 !important;
+
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
+}
+
+.numInput.cur-year {
+  font-weight: 700 !important;
+}
+
+.flatpickr-prev-month,
+.flatpickr-next-month {
+  height: 14px;
+  width: 14px;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-block: 0 !important;
+}
+
+.flatpickr-prev-month {
+  background-image: url(../../images/icons/arrow-left.svg);
+}
+
+.flatpickr-next-month {
+  background-image: url(../../images/icons/arrow-right.svg);
+}
+
+.flatpickr-prev-month svg,
+.flatpickr-next-month svg {
+  display: none;
+}
+
+.flatpickr-day.selected {
+  border-radius: 2px;
+  background-color: $blue-button !important;
+}
+
+.flatpickr-day.today {
+  border-radius: 2px;
+}
+
+.flatpickr-weekday {
+  font-weight: 700 !important;
+  color: $black !important;
+}

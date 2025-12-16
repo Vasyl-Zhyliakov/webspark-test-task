@@ -1,0 +1,232 @@
+.header {
+  position: relative;
+
+  &__background {
+    position: absolute;
+    width: 689px;
+    height: 482px;
+    top: -49.5px;
+    z-index: 1;
+    pointer-events: none;
+
+    background-image: url(../../images/background_1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @include small {
+      left: -125px;
+    }
+
+    @include desktop {
+      left: -255px;
+    }
+
+    @include tablet {
+      left: -355px;
+    }
+
+    @include mobile {
+      left: calc(-280px - ((100 - 280) * ((100vw - 375px) / (767 - 375))));
+    }
+  }
+
+  &__content {
+    z-index: 1;
+    box-shadow:
+      0 4px 24px 0 #0000001f,
+      0 12px 24px 0 #0000001f inset;
+    background-color: $white-header;
+    position: relative;
+  }
+
+  &__content-wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    gap: 86px;
+
+    @include mobile {
+      flex-direction: column;
+      height: fit-content;
+      align-items: center;
+      gap: 40px;
+    }
+  }
+
+  &__logo {
+    height: 138px;
+    width: 138px;
+    margin: 6px 86px 28px 355px;
+    display: block;
+    z-index: 2;
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: scale(1.02);
+    }
+
+    @include small {
+      margin-left: 260px;
+    }
+
+    @include desktop {
+      margin-left: 100px;
+    }
+
+    @include tablet {
+      margin-left: 20px;
+    }
+  }
+
+  &__info {
+    margin-top: 33px;
+    display: flex;
+    flex-direction: column;
+
+    @include tablet {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__title-block {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 15px;
+
+    @include mobile {
+      gap: 8px;
+      justify-content: center;
+    }
+  }
+
+  &__title {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: -0.01em;
+  }
+
+  &__start {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    color: $blue-button;
+    padding: 6px 12px 7px 12px;
+    border: 1px solid $blue-button;
+    border-radius: 2px;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+
+  &__rating-block {
+    display: flex;
+    align-items: center;
+    margin-bottom: 19px;
+
+    @include mobile {
+      justify-content: center;
+    }
+  }
+
+  &__rating {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+
+    &--mr-28 {
+      margin-right: 28px;
+    }
+
+    &--mr-17 {
+      margin-right: 17px;
+    }
+  }
+
+  &__rating-span {
+    font-weight: 400;
+  }
+
+  &__date-block {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+
+    @include mobile {
+      justify-content: center;
+    }
+  }
+
+  &__date-descripton {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+  }
+
+  &__date-inputs {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+
+    @include mobile {
+      flex-wrap: wrap;
+      gap: 10px;
+      width: 162px;
+    }
+  }
+
+  &__date-field {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 28px;
+    width: 162px;
+  }
+
+  &__date-input {
+    padding-left: 8px;
+    border: 1px solid $gray-input;
+    border-radius: 4px;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+  }
+
+  &__date-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 28px;
+    min-height: 28px;
+    background: no-repeat center / contain;
+    background-color: $gray-light;
+    opacity: 0.6;
+    cursor: pointer;
+    border: none;
+    border-left: 1px solid $gray-input;
+    border-right: 1px solid $gray-input;
+    outline: none;
+    box-sizing: content-box;
+    transition: all 0.3s ease;
+
+    &--calendar {
+      right: 0;
+      background-image: url(../../images/icons/calendar.png);
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+    }
+
+    &--clear {
+      right: 28px;
+      background-image: url(../../images/icons/plus.png);
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
