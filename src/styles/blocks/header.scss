@@ -202,8 +202,7 @@
     transform: translateY(-50%);
     width: 28px;
     min-height: 28px;
-    background: no-repeat center / contain;
-    background-color: $gray-light;
+    background: $gray-light no-repeat center / contain;
     opacity: 0.6;
     cursor: pointer;
     border: none;
